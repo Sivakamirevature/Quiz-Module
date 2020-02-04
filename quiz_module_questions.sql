@@ -27,6 +27,7 @@ CREATE TABLE `questions` (
   `name` varchar(100) NOT NULL,
   `question_category` int(10) unsigned DEFAULT NULL,
   `options` json DEFAULT NULL,
+  `score` int(10) NOT NULL,
   `explanation` text NOT NULL,
   PRIMARY KEY (`question_id`),
   KEY `ref_categories_idx` (`question_category`),
