@@ -27,6 +27,7 @@ CREATE TABLE `questions` (
   `name` varchar(100) NOT NULL,
   `question_category` int(10) unsigned DEFAULT NULL,
   `options` json DEFAULT NULL,
+  `explanation` text NOT NULL,
   PRIMARY KEY (`question_id`),
   KEY `ref_categories_idx` (`question_category`),
   CONSTRAINT `ref_categories` FOREIGN KEY (`question_category`) REFERENCES `categories` (`categories_id`)
