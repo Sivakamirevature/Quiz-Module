@@ -23,7 +23,7 @@ DROP TABLE IF EXISTS `score_history`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `score_history` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL auto_increment,
   `user_name` varchar(60) NOT NULL,
   `quiz_ref` int(10) unsigned NOT NULL,
   `quiz_score` varchar(45) NOT NULL,
