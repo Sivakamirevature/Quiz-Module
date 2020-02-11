@@ -23,7 +23,7 @@ DROP TABLE IF EXISTS `questions`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `questions` (
-  `question_id` int(10) unsigned NOT NULL,
+  `question_id` int(10) unsigned NOT NULL auto_increment,
   `name` varchar(100) NOT NULL,
   `question_category` int(10) unsigned DEFAULT NULL,
   `options` json DEFAULT NULL,
