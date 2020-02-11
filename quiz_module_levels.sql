@@ -23,7 +23,7 @@ DROP TABLE IF EXISTS `levels`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `levels` (
-  `level_id` int(10) unsigned NOT NULL,
+  `level_id` int(10) unsigned NOT NULL auto_increment,
   `level_name` varchar(10) DEFAULT NULL,
   PRIMARY KEY (`level_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
