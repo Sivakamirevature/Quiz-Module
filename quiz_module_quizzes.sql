@@ -23,7 +23,7 @@ DROP TABLE IF EXISTS `quizzes`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `quizzes` (
-  `quiz_id` int(10) unsigned NOT NULL,
+  `quiz_id` int(10) unsigned NOT NULL auto_increment,
   `quiz_name` varchar(30) NOT NULL,
   `tags` varchar(100) NOT NULL,
   `activity_points` smallint(6) NOT NULL,
